@@ -1,0 +1,161 @@
+temps
+
+
+
+import React from 'react';
+import Carousel from 'react-material-ui-carousel'
+import { Paper, Button, Container, Card, CardActions, CardActionArea, CardMedia, Typography, CardContent } from '@material-ui/core'
+import '../App.css'
+import Batman from '../Images/batman.jpg'
+import CardCompo from './Card'
+
+const divStyle = {
+    color: 'pink',
+
+};
+
+
+const Example = (props) => {
+    var items = [
+        {
+            name: "First",
+            description: "Probably the most random thing you have ever seen!"
+        },
+        {
+            name: "Second",
+            description: "Hello World!"
+        },
+        {
+            name: "Third",
+            description: "Hello World!"
+        }
+    ]
+
+    var items2 = [
+        {
+            name: "First2",
+            description: "Probably the most random thing you have ever seen!"
+        },
+        {
+            name: "Second2",
+            description: "Hello World!"
+        },
+        {
+            name: "Third2",
+            description: "Hello World!"
+        }
+    ]
+
+    
+
+    return (
+        <div>
+
+            <Carousel autoplay={false} indicators={true} animation={"slide"} interval={40000} navButtonsAlwaysVisible={true}
+                next={(next, active) => console.log(`we left ${active}, and are now at ${next}`)}
+                prev={(prev, active) => console.log(`we left ${active}, and are now at ${prev}`)}
+
+            >
+
+
+                <Blog key={1} />
+                <Work key={2} />
+                <Temp key={3} />
+
+            </Carousel>
+
+        </div>
+
+    )
+}
+
+const Blog = (props) => {
+    var items = [
+        {
+            name: "YEh pahila",
+            description: "kya bruh hai"
+        },
+        {
+            name: "Yehdoosra",
+            description: "world ko hello"
+        }
+
+    ]
+    return (
+
+        <Container className="test" >
+            <h1>Section about Blog</h1>
+            {
+                items.map((item, i) => <CardCompo key={i} item={item} />)}
+
+        </Container>
+    )
+}
+
+
+
+
+
+
+
+const Work = (props) => {
+
+    var items = [
+        {
+            name: "YEh pahila",
+            description: "kya bruh hai"
+        },
+        {
+            name: "Yehdoosra",
+            description: "world ko hello"
+        }
+
+    ]
+
+
+    return (
+        <div>
+            <Container className="test" >
+                <h1>Section about Work</h1>
+                {
+                    items.map((item, i) => <CardCompo key={i} item={item} />)}
+
+            </Container>
+        </div>
+
+    )
+}
+
+
+
+
+
+
+const Temp = (props) => {
+
+    var items = [
+        {
+            name: "YEh pahila",
+            description: "kya bruh hai"
+        },
+        {
+            name: "Yehdoosra",
+            description: "world ko hello"
+        }
+
+    ]
+
+
+    return (
+        <div>
+            <Container className="test" >
+                <h1>Section about Temp</h1>
+                {
+                    items.map((item, i) => <CardCompo key={i} item={item} />)}
+
+            </Container>
+        </div>
+
+    )
+}
+export default Example
