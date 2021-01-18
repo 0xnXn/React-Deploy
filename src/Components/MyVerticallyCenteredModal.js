@@ -14,11 +14,11 @@ export default function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            {props.heading}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
+          <h4>{props.content}</h4>
           
         </Modal.Body>
         <Modal.Footer>
@@ -28,22 +28,3 @@ export default function MyVerticallyCenteredModal(props) {
     );
   }
   
-  
-//   function App() {
-//     const [modalShow, setModalShow] = React.useState(false);
-  
-//     return (
-//       <>
-//         <Button variant="primary" onClick={() => setModalShow(true)}>
-//           Launch vertically centered modal
-//         </Button>
-  
-//         <MyVerticallyCenteredModal
-//           show={modalShow}
-//           onHide={() => setModalShow(false)}
-//         />
-//       </>
-//     );
-//   }
-  
-//   render(<App />);

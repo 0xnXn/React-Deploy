@@ -174,12 +174,15 @@ transition: background-color 2s ease-out;
   text-align: center;
   padding-left: 50%;
   margin: 5%;
+  padding-bottom: 15%;
+  margin-bottom: 5%;
 }
 .paperclsright{
   margin-top: 5%;
   height: 200px;
   text-align: center;
   padding-right: 50%;
+  margin-bottom: 5%;
 }
 .text-center{
   text-align: center;
