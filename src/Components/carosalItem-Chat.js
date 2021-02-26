@@ -7,7 +7,7 @@ import List from '@material-ui/core/List';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import 'react-vertical-timeline-component/style.min.css';
-
+import Personal from '../Images/personal.jpg'
 import { AiFillInstagram, AiFillTwitterCircle, AiOutlineFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 
@@ -71,11 +71,12 @@ const Chat = (props) => {
                                 <div className="wrap">
 
 
-                                    <h1 className="basictext">a little About me</h1>
+                                <h1 className="basictext" style={{marginTop:"19px",textAlign:"center"}}>a little about me</h1>
                                     <Divider />
-
-                                    <p className="bodytext">Ea consequat voluptate adipisicing consequat enim quis consectetur Lorem eu. Non qui amet consequat anim enim eu elit in ullamco fugiat. Qui eu adipisicing Lorem duis eiusmod qui cillum voluptate minim. Incididunt enim minim duis cillum exercitation. Voluptate culpa labore proident proident voluptate ipsum dolor anim sit excepteur.</p>
-
+                                    <div>
+                                    <img src={Personal}  />
+                                    <p className="bodytext" style={{textAlign:"center"}}> I am a Mumbai based software engineer  with an interest  in Web-Technology,AI and Behavioural Psychology.  </p>
+                                    </div>
 
                                 </div>
                             </Grid>
