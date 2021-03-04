@@ -22,7 +22,7 @@ const Blog = (props) => {
 
             <h1 className="basictext" style={{ textAlign: "center", width: "100%" }}> Blogs</h1>
             <h3 className="basictext" style={{marginLeft:"10px"}}> Index</h3>
-            <div style={{paddingLeft:"50px",width:"50%",height:"400px",display:"block"}}>
+            <div style={{paddingLeft:"50px",height:"400px",display:"block"}}>
     
             <Anchor affix={false}>
                 <Link href="#1" title="RedTeaming LAbs" />
