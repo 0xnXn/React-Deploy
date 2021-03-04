@@ -8,6 +8,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import 'react-vertical-timeline-component/style.min.css';
 import Personal from '../Images/personal.jpg'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import { AiFillInstagram, AiFillTwitterCircle, AiOutlineFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 
@@ -18,12 +20,10 @@ const Chat = (props) => {
     return (
         <div>
             <Container fixed className="workcont">
+                <Row>
+                    <Col>
 
-                <Grid container spacing={2}>
-                    <Grid item xs={13}>
-                        <Grid container justify="center" spacing={5}>
-
-                            <Grid key={1} item>
+                
                                 <div className="chatlist">
                                     <h1 className="basictext">Contact</h1>
                                     <Divider />
@@ -34,26 +34,26 @@ const Chat = (props) => {
                                             </ListItemIcon>
                                             <ListItemText primary="Linkedin" />
                                         </ListItem>
-                                        <ListItem button component="b" href="https://www.instagram.com/hello.iamnixon/">
+                                        <ListItem button component="a" href="https://www.instagram.com/hello.iamnixon/">
                                             <ListItemIcon>
                                                 <AiFillInstagram size={40} />
                                             </ListItemIcon>
                                             <ListItemText primary="Instagram" />
                                         </ListItem>
-                                        <ListItem button component="c" href="https://www.facebook.com/nixon.paulson.5/">
+                                        <ListItem button component="a" href="https://www.facebook.com/nixon.paulson.5/">
                                             <ListItemIcon>
                                                 <AiOutlineFacebook size={40} />
                                             </ListItemIcon>
                                             <ListItemText primary="Facebook" />
                                         </ListItem>
-                                        <ListItem button component="d" href="  https://github.com/0xnXn">
+                                        <ListItem button component="a" href="  https://github.com/0xnXn">
                                         
                                             <ListItemIcon>
                                                 <AiFillGithub size={40} />
                                             </ListItemIcon>
                                             <ListItemText primary="Github" />
                                         </ListItem>
-                                        <ListItem button component="e" href="https://twitter.com/nixon_paulson">
+                                        <ListItem button component="a" href="https://twitter.com/nixon_paulson">
                                             <ListItemIcon>
                                                 <AiFillTwitterCircle size={40} />
                                             </ListItemIcon>
@@ -66,24 +66,24 @@ const Chat = (props) => {
 
                                     </List>
                                 </div>
-                            </Grid>
-                            <Grid key={2} item>
-                                <div className="wrap">
+                                </Col>
+                                <Col>
+                           
+                                <div >
 
 
                                 <h1 className="basictext" style={{marginTop:"19px",textAlign:"center"}}>a little about me</h1>
                                     <Divider />
                                     <div>
                                     <img src={Personal}  />
-                                    <p className="bodytext" style={{textAlign:"center"}}> I am a Mumbai based software engineer  with an interest  in Web-Technology,AI and Behavioural Psychology.  </p>
                                     </div>
+                                    <p className="bodytext" style={{textAlign:"center"}}> I am a Mumbai based software engineer  with an interest  in   </p>
+                                    <p className="bodytext" style={{textAlign:"center"}}> Web-Technology,AI  and Behavioural Psychology.  </p>
+                                   
 
                                 </div>
-                            </Grid>
-
-                        </Grid>
-                    </Grid>
-                </Grid>
+                                </Col>
+                           </Row>
             </Container>
 
 
